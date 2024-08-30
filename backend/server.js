@@ -8,9 +8,9 @@ app.use(express.json());
 app.use(cors());
 app.use(fileUpload());
 const db = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "",
+  host: "p3plzcpnl504695.prod.phx3.secureserver.net",
+  user: "luqman",
+  password: "wpzn}_A%p,^G",
   database: "kudumbasree"
 })
 app.get("/", (req, res) => {
