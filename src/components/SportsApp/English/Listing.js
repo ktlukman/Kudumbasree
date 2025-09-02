@@ -25,7 +25,7 @@ const changeOrder = (e) => {
 const datePicker = (e) =>{
   setDatecontrol(e.target.value)
 }
-let filteredList = list.filter(item => item.FirstName.toLowerCase().includes(search.toLowerCase()) && (datecontrol === '' || item.DOB === datecontrol.split("-").reverse().join("-")));
+let filteredList = list?.filter(item => item.FirstName.toLowerCase().includes(search.toLowerCase()) && (datecontrol === '' || item.DOB === datecontrol.split("-").reverse().join("-")));
 
 if(orderCH === 'Descending'){
   filteredList.sort((a,b)=>b.FirstName.localeCompare(a.FirstName))
